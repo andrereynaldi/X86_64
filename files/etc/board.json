@@ -1,0 +1,16 @@
+{
+	"model": {
+		"id": "amlogic,p212",
+		"name": "Fiberhome HG680-P"
+	},
+	"network": {
+		"lan": {
+			"ports": ["eth0","eth1"],
+			"protocol": "static"
+		},
+		"wan": {
+			"device": "usb0",
+			"protocol": "dhcp"
+		}
+	}
+}
