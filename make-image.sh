@@ -16,7 +16,7 @@ MISC=""
 EXCLUDED=""
 
 # Core system + Web Server + LuCI
-PACKAGES+=" libc bash block-mount coreutils-base64 coreutils-sleep coreutils-stat coreutils-stty \
+PACKAGES+=" dnsmasq libc bash block-mount coreutils-base64 coreutils-sleep coreutils-stat coreutils-stty \
 curl wget-ssl tar unzip parted losetup uhttpd uhttpd-mod-ubus luci luci-base \
 luci-mod-admin-full luci-lib-ip luci-compat luci-ssl"
 
@@ -90,7 +90,7 @@ configure_profile_packages() {
 configure_release_packages() {
     if [[ "${BASE:-}" == "openwrt" ]]; then
         MISC+=" wpad-openssl iw iwinfo wireless-regdb kmod-cfg80211 kmod-mac80211 luci-app-temp-status"
-        EXCLUDED+=" -dnsmasq"
+        EXCLUDED+=""
     elif [[ "${BASE:-}" == "immortalwrt" ]]; then
         MISC+=" wpad-openssl iw iwinfo wireless-regdb kmod-cfg80211 kmod-mac80211"
         EXCLUDED+=" -dnsmasq -cpusage -automount -libustream-openssl -default-settings-chn -luci-i18n-base-zh-cn"
