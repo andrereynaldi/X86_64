@@ -68,16 +68,6 @@ log_status "INFO" "Disabling OPKG signature check..."
 sed -i 's/option check_signature/# option check_signature/g' /etc/opkg.conf 2>/dev/null
 log_status "SUCCESS" "OPKG signature check disabled"
 
-# add custom repository
-log_status "INFO" "Adding custom repository..."
-ARCH=$(grep "OPENWRT_ARCH" /etc/os-release 2>/dev/null | awk -F '"' '{print $2}')
-if [ -n "$ARCH" ]; then
-    echo "src/gz custom_packages https://dl.openwrt.ai/latest/packages/$ARCH/kiddin9" >> /etc/opkg/customfeeds.conf 2>/dev/null
-    log_status "SUCCESS" "Custom repository added for architecture: $ARCH"
-else
-    log_status "WARNING" "Could not determine architecture for custom repository"
-fi
-
 # remove login password ttyd
 log_status "INFO" "Configuring TTYD without login password..."
 uci set ttyd.@ttyd[0].command='/bin/bash --login' 2>/dev/null
@@ -96,12 +86,12 @@ log_status "SUCCESS" "Misc settings configured"
 
 # add TTL
 log_status "INFO" "Adding and running TTL script..."
-if [ -f /root/indowrt.sh ]; then
-    chmod +x /root/indowrt.sh 2>/dev/null
-    /root/indowrt.sh
+if [ -f /root/TTL.sh ]; then
+    chmod +x /root/TTL.sh 2>/dev/null
+    /root/TTL.sh
     log_status "SUCCESS" "TTL script executed"
 else
-    log_status "WARNING" "indowrt.sh not found, skipping TTL configuration"
+    log_status "WARNING" "TTL.sh not found, skipping TTL configuration"
 fi
 
 # konfigurasi uhttpd dan PHP8
