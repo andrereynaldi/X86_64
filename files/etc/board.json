@@ -1,7 +1,7 @@
 {
 	"model": {
-		"id": "amlogic,p212",
-		"name": "Fiberhome HG680-P"
+		"id": "",
+		"name": ""
 	},
 	"network": {
 		"lan": {
