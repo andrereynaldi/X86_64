@@ -15,12 +15,17 @@ PACKAGES=""
 MISC=""
 EXCLUDED=""
 
-#Base
-PACKAGES+="
+# Base Openwrt Firmware Selector
+PACKAGES+=" base-files ca-bundle dnsmasq dropbear e2fsprogs firewall4 \
+fstools grub2-bios-setup kmod-button-hotplug kmod-nft-offload libc \
+libgcc libustream-mbedtls logd mkf2fs mtd netifd nftables odhcp6c \
+odhcpd-ipv6only opkg partx-utils ppp ppp-mod-pppoe procd-ujail uci \
+uclient-fetch urandom-seed urngd kmod-e1000e kmod-e1000 \
+kmod-fs-vfat kmod-igb kmod-r8169 kmod-drm-i915 luci"
 
 # Core system + Web Server + LuCI
-PACKAGES+=" libc bash block-mount coreutils-base64 coreutils-sleep coreutils-stat coreutils-stty \
-curl wget-ssl tar unzip parted losetup uhttpd uhttpd-mod-ubus luci luci-base \
+PACKAGES+=" bash block-mount coreutils-base64 coreutils-sleep coreutils-stat coreutils-stty \
+curl wget-ssl tar unzip parted losetup uhttpd uhttpd-mod-ubus luci-base \
 luci-mod-admin-full luci-lib-ip luci-compat luci-ssl"
 
 # USB + LAN Networking Drivers And Modem Tools
@@ -92,12 +97,7 @@ configure_profile_packages() {
 # Packages Base Firmware Selector
 configure_release_packages() {
     if [[ "${BASE:-}" == "openwrt" ]]; then
-        MISC+=" base-files ca-bundle dnsmasq dropbear e2fsprogs firewall4 \
-        fstools grub2-bios-setup kmod-button-hotplug kmod-nft-offload libc \
-        libgcc libustream-mbedtls logd mkf2fs mtd netifd nftables odhcp6c \
-        odhcpd-ipv6only opkg partx-utils ppp ppp-mod-pppoe procd-ujail uci \
-        uclient-fetch urandom-seed urngd kmod-e1000e kmod-e1000 \
-        kmod-fs-vfat kmod-igb kmod-r8169 kmod-drm-i915 luci"
+        MISC+=" "
         EXCLUDED+=""
     elif [[ "${BASE:-}" == "immortalwrt" ]]; then
         MISC+=" wpad-openssl iw iwinfo wireless-regdb kmod-cfg80211 kmod-mac80211"
