@@ -98,7 +98,7 @@ configure_release_packages() {
         odhcpd-ipv6only opkg partx-utils ppp ppp-mod-pppoe procd-ujail uci \
         uclient-fetch urandom-seed urngd kmod-e1000e kmod-e1000 \
         kmod-fs-vfat kmod-igb kmod-r8169 kmod-drm-i915 luci"
-        EXCLUDED+=" kmod-amazon-ena kmod-amd-xgbe kmod-bnx2 kmod-dwmac-intel kmod-forcedeth kmod-igc kmod-ixgbe kmod-tg3"
+        EXCLUDED+=""
     elif [[ "${BASE:-}" == "immortalwrt" ]]; then
         MISC+=" wpad-openssl iw iwinfo wireless-regdb kmod-cfg80211 kmod-mac80211"
         EXCLUDED+=" -dnsmasq -cpusage -automount -libustream-openssl -default-settings-chn -luci-i18n-base-zh-cn"
