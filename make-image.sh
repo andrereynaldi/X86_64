@@ -44,7 +44,7 @@ PACKAGES+=" internet-detector internet-detector-mod-modem-restart luci-app-inter
 PACKAGES+=" luci-theme-argon"
 
 # PHP8
-PACKAGES+=" php8 php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring"
+PACKAGES+=" php8 php8-cgi php8-fastcgi php8-fpm php8-mod-ctype php8-mod-fileinfo php8-mod-iconv php8-mod-mbstring php8-mod-session php8-mod-zip"
 
 # Misc Packages + Custom Packages
 MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server \
