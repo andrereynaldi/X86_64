@@ -43,7 +43,7 @@ packages_custom+=(
     "luci-app-ramfree_|${REPOS[IMMORTALWRT]}/luci"
     "luci-app-modemband_|${REPOS[IMMORTALWRT]}/luci"
     "luci-app-sms-tool-js_|${REPOS[IMMORTALWRT]}/luci"
-    "dns2tcp_|${REPOS[IMMORTALWRT]}/packages"
+    #"dns2tcp_|${REPOS[IMMORTALWRT]}/packages"
     #"luci-theme-argon_|${REPOS[IMMORTALWRT]}/luci"
     #"luci-app-irqbalance_|${REPOS[IMMORTALWRT]}/luci"
     
@@ -53,10 +53,10 @@ packages_custom+=(
     "luci-app-temp-status_|${REPOS[KIDDIN9]}"
     #"luci-theme-edge_|${REPOS[KIDDIN9]}"
     
-    "luci-app-tinyfm_|https://api.github.com/repos/bobbyunknown/luci-app-tinyfm/releases/latest"
-    "luci-app-droidnet_|https://api.github.com/repos/animegasan/luci-app-droidmodem/releases/latest"
-    "luci-theme-alpha_|https://api.github.com/repos/derisamedia/luci-theme-alpha/releases/latest"
-    "luci-app-tailscale_|https://api.github.com/repos/asvow/luci-app-tailscale/releases/latest"
+    #"luci-app-tinyfm_|https://api.github.com/repos/bobbyunknown/luci-app-tinyfm/releases/latest"
+    #"luci-app-droidnet_|https://api.github.com/repos/animegasan/luci-app-droidmodem/releases/latest"
+    #"luci-theme-alpha_|https://api.github.com/repos/derisamedia/luci-theme-alpha/releases/latest"
+    #"luci-app-tailscale_|https://api.github.com/repos/asvow/luci-app-tailscale/releases/latest"
     #"luci-app-rakitanmanager_|https://api.github.com/repos/rtaserver/RakitanManager/releases/latest"
     "luci-app-ipinfo_|https://api.github.com/repos/bobbyunknown/luci-app-ipinfo/releases/latest"
 )
