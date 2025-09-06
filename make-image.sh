@@ -69,12 +69,12 @@ PACKAGES+=" luci-theme-argon"
 PACKAGES+=" php8 php8-cgi php8-fastcgi php8-fpm php8-mod-ctype php8-mod-fileinfo php8-mod-iconv php8-mod-mbstring php8-mod-session php8-mod-zip"
 
 # Extra
-PACKAGES+=" kmod-nls-utf8 kmod-macvlan"
+PACKAGES+=" luci-app-tinyfilemanager kmod-nls-utf8 kmod-macvlan"
 
 # Miscellaneous
 MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server \
 screen lolcat luci-proto-atc luci-app-mmconfig luci-app-cpu-status \
-luci-app-lite-watchdog luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-3ginfo-lite"
+luci-app-lite-watchdog luci-app-poweroffdevice luci-app-ramfree luci-app-ttyd luci-app-3ginfo-lite"
 
 # VPN Tunnel
 OPENCLASH3="coreutils-nohup bash dnsmasq-full iptables ca-certificates ipset ip-full iptables-mod-tproxy iptables-mod-extra libcap libcap-bin ruby ruby-yaml kmod-tun luci-app-openclash"
