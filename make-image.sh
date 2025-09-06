@@ -73,7 +73,7 @@ PACKAGES+=" kmod-nls-utf8 kmod-macvlan"
 
 # Miscellaneous
 MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server \
-screen lolcat luci-proto-atc luci-app-mmconfig \
+screen lolcat luci-proto-atc luci-app-mmconfig luci-app-cpu-status \
 luci-app-lite-watchdog luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-3ginfo-lite"
 
 # VPN Tunnel
