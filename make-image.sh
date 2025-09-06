@@ -37,7 +37,7 @@ PACKAGES+=" kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis \
 kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
 
 # FM350_gl
-PACKAGES+=" atc-fib-fm350_gl xmm-modem"
+PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
 
 # Universal MBIM
 PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option picocom"
