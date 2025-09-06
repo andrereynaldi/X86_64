@@ -37,13 +37,18 @@ PACKAGES+=" kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis \
 kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
 
 # FM350_gl
-PACKAGES+=" atc-fib-fm350_gl"
+PACKAGES+=" atc-fib-fm350_gl xmm-modem"
+
+# Universal MBIM
+PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option picocom"
+# QMI MBIM
+# PACKAGES+=" kmod-usb-net-qmi-wwan uqmi luci-proto-qmi kmod-usb-serial-option picocom"
 
 # dependencies
-PACKAGES+=" comgt kmod-usb-acm kmod-usb-net-cdc-mbim umbim \
-kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan modemmanager luci-proto-modemmanager \
-mbim-utils usbutils luci-proto-ncm kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3 \
-usb-modeswitch xmm-modem kmod-nls-utf8 kmod-macvlan"
+# USB/MBIM
+PACKAGES+=" usbutils usb-modeswitch kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3"
+PACKAGES+=" comgt kmod-usb-acm kmod-usb-serial kmod-usb-serial-wwan \
+modemmanager luci-proto-modemmanager mbim-utils luci-proto-ncm"
 
 # Modem Management Tools
 PACKAGES+=" modeminfo luci-app-modeminfo atinout modemband luci-app-modemband sms-tool luci-app-sms-tool-js picocom minicom"
@@ -57,11 +62,14 @@ PACKAGES+=" luci-app-diskman kmod-usb-storage kmod-usb-storage-uas ntfs-3g kmod-
 # Monitoring
 PACKAGES+=" internet-detector internet-detector-mod-modem-restart luci-app-internet-detector vnstat2 vnstati2 luci-app-netmonitor"
 
-# Theme + UI
+# Themes
 PACKAGES+=" luci-theme-argon"
 
 # PHP8
 PACKAGES+=" php8 php8-cgi php8-fastcgi php8-fpm php8-mod-ctype php8-mod-fileinfo php8-mod-iconv php8-mod-mbstring php8-mod-session php8-mod-zip"
+
+# Extra
+PACKAGES+=" kmod-nls-utf8 kmod-macvlan"
 
 # Miscellaneous
 MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server \
