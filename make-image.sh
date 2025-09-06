@@ -24,15 +24,24 @@ uclient-fetch urandom-seed urngd kmod-e1000e kmod-e1000 \
 kmod-fs-vfat kmod-igb kmod-r8169 kmod-drm-i915 luci"
 
 # Core system + Web Server + LuCI
-PACKAGES+=" bash block-mount coreutils-base64 coreutils-sleep coreutils-stat coreutils-stty \
-curl wget-ssl tar unzip parted losetup uhttpd uhttpd-mod-ubus luci-base \
-luci-mod-admin-full luci-lib-ip luci-compat luci-ssl"
+PACKAGES+=" bash block-mount coreutils-base64 coreutils-sleep coreutils-stat \
+coreutils-stty curl wget-ssl tar unzip parted losetup uhttpd uhttpd-mod-ubus \
+luci-base luci-mod-admin-full luci-lib-ip luci-compat luci-ssl"
 
-# USB + LAN Networking Drivers And Modem Tools
+# USB to LAN
 PACKAGES+=" kmod-usb-net-rtl8152"
-PACKAGES+=" kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
-PACKAGES+=" kmod-usb-acm kmod-usb-net-cdc-mbim umbim \
-kmod-usb-serial-option kmod-usb-serial kmod-usb-serial-wwan modemmanager luci-proto-modemmanager \
+
+# Modem
+# Ethernet tethering
+PACKAGES+=" kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis \
+kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
+
+# FM350_gl
+PACKAGES+=" atc-fib-fm350_gl"
+
+# dependencies
+PACKAGES+=" comgt kmod-usb-acm kmod-usb-net-cdc-mbim umbim \
+kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan modemmanager luci-proto-modemmanager \
 mbim-utils usbutils luci-proto-ncm kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3 \
 usb-modeswitch xmm-modem kmod-nls-utf8 kmod-macvlan"
 
@@ -54,10 +63,10 @@ PACKAGES+=" luci-theme-argon"
 # PHP8
 PACKAGES+=" php8 php8-cgi php8-fastcgi php8-fpm php8-mod-ctype php8-mod-fileinfo php8-mod-iconv php8-mod-mbstring php8-mod-session php8-mod-zip"
 
-# Misc Packages + Custom Packages
+# Miscellaneous
 MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server \
-screen lolcat atc-fib-fm350_gl luci-proto-atc luci-app-mmconfig \
-luci-app-lite-watchdog luci-app-mactodong luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-3ginfo-lite"
+screen lolcat luci-proto-atc luci-app-mmconfig \
+luci-app-lite-watchdog luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-3ginfo-lite"
 
 # VPN Tunnel
 OPENCLASH3="coreutils-nohup bash dnsmasq-full iptables ca-certificates ipset ip-full iptables-mod-tproxy iptables-mod-extra libcap libcap-bin ruby ruby-yaml kmod-tun luci-app-openclash"
