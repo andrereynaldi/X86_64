@@ -49,7 +49,9 @@ PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option p
 PACKAGES+=" usbutils usb-modeswitch kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3"
 PACKAGES+=" comgt kmod-usb-acm kmod-usb-serial kmod-usb-serial-wwan \
 modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi mbim-utils luci-proto-ncm \
-kmod-usb-serial kmod-usb-serial-wwan kmod-usb-net-qmi-wwan kmod-usb-net-cdc-mbim"
+kmod-usb-serial kmod-usb-serial-wwan kmod-usb-net-qmi-wwan kmod-usb-net-cdc-mbim dbus \
+lua-cjson
+
 # Modem Management Tools
 PACKAGES+=" modeminfo luci-app-modeminfo atinout modemband luci-app-modemband sms-tool luci-app-sms-tool-js picocom minicom"
 
