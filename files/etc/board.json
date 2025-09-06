@@ -9,7 +9,7 @@
 			"protocol": "static"
 		},
 		"wan": {
-			"device": ["usb0","wwan0"],
+			"device": "usb0",
 			"protocol": "dhcp"
 		}
 	}
