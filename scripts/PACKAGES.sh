@@ -44,7 +44,7 @@ packages_custom+=(
     "luci-app-modemband_|${REPOS[IMMORTALWRT]}/luci"
     "luci-app-sms-tool-js_|${REPOS[IMMORTALWRT]}/luci"
     "dns2tcp_|${REPOS[IMMORTALWRT]}/packages"
-    "luci-theme-argon_|${REPOS[IMMORTALWRT]}/luci"
+    #"luci-theme-argon_|${REPOS[IMMORTALWRT]}/luci"
     #"luci-app-irqbalance_|${REPOS[IMMORTALWRT]}/luci"
     
     "luci-app-internet-detector_|${REPOS[KIDDIN9]}"
