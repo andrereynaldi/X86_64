@@ -48,6 +48,7 @@ download_custom_scripts() {
     
     local scripts=(
         "https://raw.githubusercontent.com/andrereynaldi/DreamOs-arm64/refs/heads/main/xxx/TTL.sh"
+        "https://github.com/andrereynaldi/openwrt-packages/blob/main/atc-fib-fm350_gl/Makefile"
     )
     
     for script in "${scripts[@]}"; do
