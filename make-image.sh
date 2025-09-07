@@ -46,23 +46,24 @@ PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option p
 
 # dependencies
 # USB/MBIM
-PACKAGES+=" usbutils usb-modeswitch kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3"
-PACKAGES+=" comgt kmod-usb-acm kmod-usb-serial kmod-usb-serial-wwan \
-modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi mbim-utils luci-proto-ncm \
-kmod-usb-serial kmod-usb-serial-wwan kmod-usb-net-qmi-wwan kmod-usb-net-cdc-mbim dbus \
-lua-cjson
+PACKAGES+=" usbutils usb-modeswitch kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3 \
+kmod-usb-acm  \
+kmod-usb-net-qmi-wwan kmod-usb-net-cdc-mbim"
+PACKAGES+=" comgt modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi \
+mbim-utils luci-proto-ncm dbus lua-cjson"
 
 # Modem Management Tools
 PACKAGES+=" modeminfo luci-app-modeminfo atinout modemband luci-app-modemband sms-tool luci-app-sms-tool-js picocom minicom"
 
 # ModemInfo Serial Support
-PACKAGES+=" modeminfo-serial-fibocom modeminfo-serial-xmm"
+PACKAGES+=" kmod-usb-serial kmod-usb-serial-wwan kmod-usb-serial kmod-usb-serial-wwan \
+modeminfo-serial-fibocom modeminfo-serial-xmm"
 
 # Storage - NAS
 PACKAGES+=" luci-app-diskman kmod-usb-storage kmod-usb-storage-uas ntfs-3g kmod-fs-ext4 kmod-fs-exfat"
 
 # Monitoring
-PACKAGES+=" internet-detector internet-detector-mod-modem-restart luci-app-internet-detector vnstat2 vnstati2 luci-app-netmonitor"
+# PACKAGES+=" internet-detector internet-detector-mod-modem-restart luci-app-internet-detector vnstat2 vnstati2 luci-app-netmonitor"
 
 # Themes
 PACKAGES+=" luci-theme-argon"
