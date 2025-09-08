@@ -51,7 +51,7 @@ PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option p
 # USB/MBIM
 PACKAGES+=" usbutils usb-modeswitch kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3 \
 kmod-usb-acm kmod-usb-net-qmi-wwan"
-PACKAGES+=" kmod-wwan comgt modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi \
+PACKAGES+=" kmod-wwan comgt comgt-directip comgt-ncm modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi \
 mbim-utils luci-proto-ncm dbus lua-cjson"
 
 # Modem Management Tools
