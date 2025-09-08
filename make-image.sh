@@ -39,6 +39,9 @@ kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
 # FM350_gl
 PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
 
+# MHI Modem Host Interface
+PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim"
+
 # Universal MBIM
 PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option picocom"
 # QMI MBIM
@@ -47,9 +50,8 @@ PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option p
 # dependencies
 # USB/MBIM
 PACKAGES+=" usbutils usb-modeswitch kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3 \
-kmod-usb-acm  \
-kmod-usb-net-qmi-wwan kmod-usb-net-cdc-mbim"
-PACKAGES+=" comgt modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi \
+kmod-usb-acm kmod-usb-net-qmi-wwan"
+PACKAGES+=" kmod-wwan comgt modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi \
 mbim-utils luci-proto-ncm dbus lua-cjson"
 
 # Modem Management Tools
@@ -72,7 +74,7 @@ PACKAGES+=" luci-theme-argon"
 PACKAGES+=" php8 php8-cgi php8-fastcgi php8-fpm php8-mod-ctype php8-mod-fileinfo php8-mod-iconv php8-mod-mbstring php8-mod-session php8-mod-zip"
 
 # Extra
-PACKAGES+=" luci-app-tinyfilemanager luci-app-cpu-status kmod-nls-utf8 kmod-macvlan"
+PACKAGES+=" luci-app-tinyfilemanager luci-app-cpu-status kmod-nls-utf8 kmod-macvlan kmod-tcp-bbr"
 
 # Miscellaneous
 MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server \
