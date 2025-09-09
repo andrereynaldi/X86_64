@@ -47,6 +47,7 @@ download_custom_scripts() {
     log "INFO" "Downloading custom scripts"
     
     local scripts=(
+        "https://raw.githubusercontent.com/FUjr/QModem/refs/heads/main/application/qmodem/Makefile"
         "https://raw.githubusercontent.com/andrereynaldi/X86_64/refs/heads/main/misc/TTL.sh"
         "https://raw.githubusercontent.com/andrereynaldi/openwrt-packages/refs/heads/main/atc-fib-fm350_gl/Makefile"
     )
