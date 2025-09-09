@@ -34,7 +34,7 @@ packages_custom+=(
     "luci-app-diskman_|${REPOS[KIDDIN9]}"
     #"luci-app-poweroff_|${REPOS[DLLKIDS]}"
     "luci-app-poweroffdevice_|${REPOS[KIDDIN9]}" 
-    "xmm-modem_|${REPOS[KIDDIN9]}"
+    #"xmm-modem_|${REPOS[KIDDIN9]}"
     
     "luci-app-lite-watchdog_|${REPOS[KIDDIN9]}"
     "luci-app-atcommands_|${REPOS[KIDDIN9]}"
