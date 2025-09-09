@@ -40,8 +40,7 @@ kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
 PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
 
 # Qmodem
-# PACKAGES+=" qmodem luci-app-qmodem -luci-app-qmodem-sms \
-ndisc6 quectel-CM-5G-M sms-tool_q tom_modem"
+# PACKAGES+=" qmodem luci-app-qmodem -luci-app-qmodem-sms ndisc6 quectel-CM-5G-M sms-tool_q tom_modem"
 
 # MHI Modem Host Interface
 PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim"
