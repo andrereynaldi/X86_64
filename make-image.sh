@@ -39,9 +39,6 @@ kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
 # FM350_gl
 PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
 
-# Qmodem
-# PACKAGES+=" qmodem luci-app-qmodem -luci-app-qmodem-sms ndisc6 quectel-CM-5G-M sms-tool_q tom_modem"
-
 # MHI Modem Host Interface
 PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim"
 
@@ -83,6 +80,8 @@ PACKAGES+=" luci-app-tinyfilemanager luci-app-cpu-status kmod-nls-utf8 kmod-macv
 MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server \
 screen lolcat luci-proto-atc luci-app-mmconfig \
 luci-app-lite-watchdog luci-app-poweroffdevice luci-app-ramfree luci-app-ttyd luci-app-3ginfo-lite"
+MISC+=" qmodem luci-app-qmodem"
+# luci-app-qmodem-sms ndisc6 quectel-CM-5G-M sms-tool_q tom_modem
 
 # VPN Tunnel
 OPENCLASH3="coreutils-nohup bash dnsmasq-full iptables ca-certificates ipset ip-full iptables-mod-tproxy iptables-mod-extra libcap libcap-bin ruby ruby-yaml kmod-tun luci-app-openclash"
