@@ -73,7 +73,7 @@ PACKAGES+=" kmod-usb-serial kmod-usb-serial-wwan kmod-usb-serial kmod-usb-serial
 #modeminfo-serial-fibocom modeminfo-serial-xmm"
 
 # Storage - NAS
-#PACKAGES+=" luci-app-diskman kmod-usb-storage kmod-usb-storage-uas ntfs-3g kmod-fs-ext4 kmod-fs-exfat"
+PACKAGES+=" luci-app-diskman kmod-usb-storage kmod-usb-storage-uas ntfs-3g kmod-fs-ext4 kmod-fs-exfat"
 
 # Monitoring
 # PACKAGES+=" internet-detector internet-detector-mod-modem-restart luci-app-internet-detector vnstat2 vnstati2 luci-app-netmonitor"
