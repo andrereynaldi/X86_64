@@ -35,18 +35,25 @@ PACKAGES+=" kmod-usb-net-rtl8152"
 # Ethernet tethering
 PACKAGES+=" kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis \
 kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
+
 # ModemManager
 PACKAGES+=" modemmanager glib2 zlib libpthread libgcc1 libffi libattr libpcre2 dbus \
 libexpat libdbus ppp kmod-ppp kernel kmod-lib-crc-ccitt kmod-slhc libmbim libqmi libqrtr-glib"
+PACKAGES+=" modemmanager-rpcd lua-cjson"
+PACKAGES+=" luci-proto-modemmanager"
 
 # FM350_gl
 #PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
 
-# MHI Modem Host Interface
-#PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim kmod-qrtr kmod-qrtr-mhi"
+#Modem Host Interface
+PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim kmod-qrtr kmod-qrtr-mhi"
 
+# MBIM
+PACKAGES+=" luci-proto-mbim umbim kmod-usb-net kmod-mii kmod-usb-core kmod-nls-base kmod-usb-net-cdc-mbim \
+kmod-usb-wdm kmod-usb-net-cdc-ncm kmod-usb-net-cdc-ether wwan"
+PACKAGES+=" mbim-utils"
 # Universal MBIM
-#PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option picocom"
+PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option picocom"
 # QMI MBIM
 # PACKAGES+=" kmod-usb-net-qmi-wwan uqmi luci-proto-qmi kmod-usb-serial-option picocom"
 
