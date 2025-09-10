@@ -40,7 +40,7 @@ kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
 #PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
 
 # MHI Modem Host Interface
-#PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim"
+#PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim kmod-qrtr kmod-qrtr-mhi"
 
 # Universal MBIM
 #PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option picocom"
