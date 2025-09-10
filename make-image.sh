@@ -35,6 +35,9 @@ PACKAGES+=" kmod-usb-net-rtl8152"
 # Ethernet tethering
 PACKAGES+=" kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis \
 kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
+# ModemManager
+PACKAGES+=" modemmanager glib2 zlib libpthread libgcc1 libffi libattr libpcre2 dbus \
+libexpat libdbus ppp kmod-ppp kernel kmod-lib-crc-ccitt kmod-slhc libmbim libqmi libqrtr-glib"
 
 # FM350_gl
 #PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
