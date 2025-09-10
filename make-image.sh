@@ -16,13 +16,13 @@ MISC=""
 EXCLUDED=""
 
 # Base Openwrt Firmware Selector
-PACKAGES+=" base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls \
-logd mtd netifd uci uclient-fetch urandom-seed urngd partx-utils mkf2fs \
-e2fsprogs kmod-button-hotplug grub2-bios-setup procd-ujail dnsmasq \
-firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe \
-opkg kmod-amazon-ena kmod-amd-xgbe kmod-bnx2 kmod-dwmac-intel \ 
-kmod-e1000e kmod-e1000 kmod-forcedeth kmod-fs-vfat kmod-igb kmod-igc kmod-ixgbe \
-kmod-r8169 kmod-tg3 kmod-drm-i915"
+#PACKAGES+=" base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls \
+#logd mtd netifd uci uclient-fetch urandom-seed urngd partx-utils mkf2fs \
+#e2fsprogs kmod-button-hotplug grub2-bios-setup procd-ujail dnsmasq \
+#firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe \
+#opkg kmod-amazon-ena kmod-amd-xgbe kmod-bnx2 kmod-dwmac-intel \ 
+#kmod-e1000e kmod-e1000 kmod-forcedeth kmod-fs-vfat kmod-igb kmod-igc kmod-ixgbe \
+#kmod-r8169 kmod-tg3 kmod-drm-i915"
 
 # Core system + Web Server + LuCI
 PACKAGES+=" bash block-mount coreutils-base64 coreutils-sleep coreutils-stat \
