@@ -37,32 +37,32 @@ PACKAGES+=" kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis \
 kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm"
 
 # FM350_gl
-PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
+#PACKAGES+=" atc-fib-fm350_gl xmm-modem kmod-mtk-t7xx"
 
 # MHI Modem Host Interface
-PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim"
+#PACKAGES+=" kmod-mhi-bus kmod-mhi-net kmod-mhi-pci-generic kmod-mhi-wwan-ctrl kmod-mhi-wwan-mbim"
 
 # Universal MBIM
-PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option picocom"
+#PACKAGES+=" kmod-usb-net-cdc-mbim umbim luci-proto-mbim kmod-usb-serial-option picocom"
 # QMI MBIM
 # PACKAGES+=" kmod-usb-net-qmi-wwan uqmi luci-proto-qmi kmod-usb-serial-option picocom"
 
 # dependencies
 # USB/MBIM
-PACKAGES+=" usbutils usb-modeswitch kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3 \
-kmod-usb-acm kmod-usb-net-qmi-wwan"
-PACKAGES+=" kmod-wwan comgt comgt-directip comgt-ncm modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi \
-mbim-utils luci-proto-ncm dbus lua-cjson"
+#PACKAGES+=" usbutils usb-modeswitch kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3 \
+#kmod-usb-acm kmod-usb-net-qmi-wwan"
+#PACKAGES+=" kmod-wwan comgt comgt-directip comgt-ncm modemmanager luci-proto-modemmanager modemmanager-rpcd dbus libqmi \
+#mbim-utils luci-proto-ncm dbus lua-cjson"
 
 # Modem Management Tools
-PACKAGES+=" modeminfo luci-app-modeminfo atinout modemband luci-app-modemband sms-tool luci-app-sms-tool-js picocom minicom"
+#PACKAGES+=" modeminfo luci-app-modeminfo atinout modemband luci-app-modemband sms-tool luci-app-sms-tool-js picocom minicom"
 
 # ModemInfo Serial Support
-PACKAGES+=" kmod-usb-serial kmod-usb-serial-wwan kmod-usb-serial kmod-usb-serial-wwan \
-modeminfo-serial-fibocom modeminfo-serial-xmm"
+#PACKAGES+=" kmod-usb-serial kmod-usb-serial-wwan kmod-usb-serial kmod-usb-serial-wwan \
+#modeminfo-serial-fibocom modeminfo-serial-xmm"
 
 # Storage - NAS
-PACKAGES+=" luci-app-diskman kmod-usb-storage kmod-usb-storage-uas ntfs-3g kmod-fs-ext4 kmod-fs-exfat"
+#PACKAGES+=" luci-app-diskman kmod-usb-storage kmod-usb-storage-uas ntfs-3g kmod-fs-ext4 kmod-fs-exfat"
 
 # Monitoring
 # PACKAGES+=" internet-detector internet-detector-mod-modem-restart luci-app-internet-detector vnstat2 vnstati2 luci-app-netmonitor"
@@ -74,14 +74,12 @@ PACKAGES+=" luci-theme-argon"
 PACKAGES+=" php8 php8-cgi php8-fastcgi php8-fpm php8-mod-ctype php8-mod-fileinfo php8-mod-iconv php8-mod-mbstring php8-mod-session php8-mod-zip"
 
 # Extra
-PACKAGES+=" luci-app-tinyfilemanager luci-app-cpu-status kmod-nls-utf8 kmod-macvlan kmod-tcp-bbr"
+PACKAGES+=" luci-app-tinyfilemanager luci-app-cpu-status kmod-nls-utf8 kmod-tcp-bbr"
 
 # Miscellaneous
-MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server \
-screen lolcat luci-proto-atc luci-app-mmconfig \
-luci-app-lite-watchdog luci-app-poweroffdevice luci-app-ramfree luci-app-ttyd luci-app-3ginfo-lite"
-MISC+=" qmodem luci-app-qmodem"
-# luci-app-qmodem-sms ndisc6 quectel-CM-5G-M sms-tool_q tom_modem
+MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server screen lolcat luci-app-poweroffdevice luci-app-ramfree luci-app-ttyd"
+# MISC+=" luci-proto-atc luci-app-mmconfig luci-app-lite-watchdog luci-app-3ginfo-lite"
+# MISC+=" qmodem luci-app-qmodem luci-app-qmodem-sms ndisc6 quectel-CM-5G-M sms-tool_q tom_modem
 
 # VPN Tunnel
 OPENCLASH3="coreutils-nohup bash dnsmasq-full iptables ca-certificates ipset ip-full iptables-mod-tproxy iptables-mod-extra libcap libcap-bin ruby ruby-yaml kmod-tun luci-app-openclash"
