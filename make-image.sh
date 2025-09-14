@@ -92,11 +92,11 @@ PASSWALL="chinadns-ng resolveip dns2socks dns2tcp ipt2socks microsocks tcping xr
 add_tunnel_packages() {
     local option="$1"
     if [[ "$option" == "openclash" ]]; then
-        PACKAGES+=" $OPENCLASH4"
+        PACKAGES+=" $OPENCLASH"
     elif [[ "$option" == "openclash-nikki" ]]; then
-        PACKAGES+=" $OPENCLASH4 $NIKKI"
+        PACKAGES+=" $OPENCLASH $NIKKI"
     elif [[ "$option" == "openclash-nikki-passwall" ]]; then
-        PACKAGES+=" $OPENCLASH4 $NIKKI $PASSWALL"
+        PACKAGES+=" $OPENCLASH $NIKKI $PASSWALL"
     elif [[ "$option" == "" ]]; then
         # No tunnel packages
         :
@@ -120,7 +120,7 @@ configure_profile_packages() {
 configure_release_packages() {
     if [[ "${BASE:-}" == "openwrt" ]]; then
         MISC+=" wpad-openssl iw iwinfo wireless-regdb kmod-cfg80211 kmod-mac80211 luci-app-temp-status"
-        EXCLUDED+=""
+        EXCLUDED+=" -dnsmasq"
     elif [[ "${BASE:-}" == "immortalwrt" ]]; then
         MISC+=" wpad-openssl iw iwinfo wireless-regdb kmod-cfg80211 kmod-mac80211"
         EXCLUDED+=" -dnsmasq -cpusage -automount -libustream-openssl -default-settings-chn -luci-i18n-base-zh-cn"
