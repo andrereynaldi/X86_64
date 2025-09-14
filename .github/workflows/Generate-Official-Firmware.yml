@@ -16,7 +16,7 @@ on:
       target:
         description: "Select device board"
         required: true
-        default: "all-device"
+        default: "X86-64"
         type: choice
         options:
           - all-device
@@ -35,7 +35,7 @@ on:
       tunnel:
         description: "Select Tunnel VPN"
         required: true
-        default: "openclash"
+        default: "no-tunnel"
         type: choice
         options:
           - openclash
