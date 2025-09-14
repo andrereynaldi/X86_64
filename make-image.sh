@@ -16,13 +16,14 @@ MISC=""
 EXCLUDED=""
 
 # Base Openwrt Firmware Selector
-#PACKAGES+=" base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls \
-#logd mtd netifd uci uclient-fetch urandom-seed urngd partx-utils mkf2fs \
-#e2fsprogs kmod-button-hotplug grub2-bios-setup procd-ujail dnsmasq \
-#firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe \
-#opkg kmod-amazon-ena kmod-amd-xgbe kmod-bnx2 kmod-dwmac-intel \ 
-#kmod-e1000e kmod-e1000 kmod-forcedeth kmod-fs-vfat kmod-igb kmod-igc kmod-ixgbe \
-#kmod-r8169 kmod-tg3 kmod-drm-i915"
+PACKAGES+=" base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls \
+logd mtd netifd uci uclient-fetch urandom-seed urngd partx-utils mkf2fs \
+e2fsprogs kmod-button-hotplug grub2-bios-setup procd-ujail dnsmasq \
+firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe opkg"
+# Generic
+PACKAGES+=" kmod-amazon-ena kmod-amd-xgbe kmod-bnx2 kmod-dwmac-intel \ 
+kmod-e1000e kmod-e1000 kmod-forcedeth kmod-fs-vfat kmod-igb kmod-igc kmod-ixgbe \
+kmod-r8169 kmod-tg3 kmod-drm-i915"
 
 # Core system + Web Server + LuCI
 PACKAGES+=" bash block-mount coreutils-base64 coreutils-sleep coreutils-stat \
@@ -79,9 +80,6 @@ PACKAGES+=" luci-app-diskman kmod-usb-storage kmod-usb-storage-uas ntfs-3g kmod-
 # Monitoring
 # PACKAGES+=" internet-detector internet-detector-mod-modem-restart luci-app-internet-detector vnstat2 vnstati2 luci-app-netmonitor"
 
-# Themes
-PACKAGES+=" luci-theme-argon"
-
 # PHP8
 PACKAGES+=" php8 php8-cgi php8-fastcgi php8-fpm php8-mod-ctype php8-mod-fileinfo php8-mod-iconv php8-mod-mbstring php8-mod-session php8-mod-zip"
 
@@ -90,7 +88,7 @@ PACKAGES+=" luci-app-tinyfilemanager luci-app-cpu-status kmod-nls-utf8 kmod-tcp-
 
 # Miscellaneous
 MISC+=" zoneinfo-core zoneinfo-asia jq openssh-sftp-server screen lolcat luci-app-poweroffdevice luci-app-ramfree luci-app-ttyd"
-MISC+=" luci-proto-atc luci-app-mmconfig luci-app-lite-watchdog luci-app-3ginfo-lite"
+MISC+=" luci-theme-argon luci-proto-atc luci-app-mmconfig luci-app-lite-watchdog luci-app-3ginfo-lite"
 #MISC+=" qmodem luci-app-qmodem luci-app-qmodem-sms ndisc6 quectel-CM-5G-M sms-tool_q tom_modem
 
 # VPN Tunnel
