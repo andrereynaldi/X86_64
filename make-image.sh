@@ -62,7 +62,7 @@ PACKAGES+=" modeminfo luci-app-modeminfo atinout modemband luci-app-modemband sm
 
 # ModemInfo Serial Support
 PACKAGES+=" kmod-usb-serial kmod-usb-serial-wwan kmod-usb-serial kmod-usb-serial-wwan \
-#modeminfo-serial-fibocom modeminfo-serial-xmm"
+#modeminfo-serial-fibocom luci-proto-xmm modeminfo-serial-xmm"
 
 # Storage - NAS
 PACKAGES+=" luci-app-diskman kmod-usb-storage kmod-usb-storage-uas ntfs-3g kmod-fs-ext4 kmod-fs-exfat"
@@ -120,7 +120,7 @@ configure_profile_packages() {
 configure_release_packages() {
     if [[ "${BASE:-}" == "openwrt" ]]; then
         MISC+=" wpad-openssl iw iwinfo wireless-regdb kmod-cfg80211 kmod-mac80211 luci-app-temp-status"
-        EXCLUDED+=""
+        EXCLUDED+="  -dnsmasq"
     elif [[ "${BASE:-}" == "immortalwrt" ]]; then
         MISC+=" wpad-openssl iw iwinfo wireless-regdb kmod-cfg80211 kmod-mac80211"
         EXCLUDED+=" -dnsmasq -cpusage -automount -libustream-openssl -default-settings-chn -luci-i18n-base-zh-cn"
